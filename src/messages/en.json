@@ -1,0 +1,56 @@
+{
+  "common": {
+    "products": "Products",
+    "cart": "Cart",
+    "login": "Login",
+    "logout": "Logout",
+    "admin": "Admin"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loggingIn": "Logging in...",
+    "invalidCredentials": "Invalid email or password",
+    "somethingWentWrong": "Something went wrong"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "delete": "Delete",
+    "description": "Description",
+    "specifications": "Specifications",
+    "reviews": "Reviews",
+    "relatedProducts": "Related Products",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "addToWishlist": "Add to Wishlist",
+    "removeFromWishlist": "Remove from Wishlist"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "summary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "total": "Total",
+    "checkout": "Checkout"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "addProduct": "Add Product",
+    "productName": "Product Name",
+    "price": "Price",
+    "imageUrl": "Image URL",
+    "add": "Add",
+    "adding": "Adding...",
+    "products": "Products",
+    "addProductError": "Error adding product",
+    "deleteProductError": "Error deleting product"
+  },
+  "Navigation": {
+    "brand": "E-Commerce",
+    "home": "Home",
+    "products": "Products",
+    "cart": "Cart"
+  }
+} 

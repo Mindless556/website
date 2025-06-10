@@ -160,15 +160,4 @@ export default function ProductPage({ params }: ProductPageProps) {
       </motion.div>
     </motion.div>
   );
-}
-
-export const metadata = {
-  title: 'تفاصيل المنتج | متجر إلكتروني',
-  description: 'تعرف على تفاصيل المنتج، السعر، والوصف الكامل لهذا المنتج المميز في متجرنا الإلكتروني.',
-  openGraph: {
-    title: 'تفاصيل المنتج | متجر إلكتروني',
-    description: 'تعرف على تفاصيل المنتج، السعر، والوصف الكامل لهذا المنتج المميز في متجرنا الإلكتروني.',
-    type: 'website',
-    locale: 'ar',
-  },
-}; 
+} 

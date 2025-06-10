@@ -1,0 +1,51 @@
+{
+  "common": {
+    "home": "الرئيسية",
+    "products": "المنتجات",
+    "cart": "سلة التسوق",
+    "account": "حسابي",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "search": "بحث",
+    "categories": "التصنيفات",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "total": "المجموع",
+    "checkout": "إتمام الشراء",
+    "continueShopping": "متابعة التسوق",
+    "addToCart": "إضافة إلى السلة",
+    "removeFromCart": "إزالة من السلة",
+    "viewCart": "عرض السلة",
+    "emptyCart": "سلة التسوق فارغة",
+    "loading": "جاري التحميل..."
+  },
+  "auth": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "rememberMe": "تذكرني",
+    "loginSuccess": "تم تسجيل الدخول بنجاح",
+    "registerSuccess": "تم إنشاء الحساب بنجاح",
+    "logoutSuccess": "تم تسجيل الخروج بنجاح"
+  },
+  "product": {
+    "description": "الوصف",
+    "specifications": "المواصفات",
+    "reviews": "التقييمات",
+    "relatedProducts": "منتجات ذات صلة",
+    "outOfStock": "نفذت الكمية",
+    "inStock": "متوفر",
+    "addToWishlist": "إضافة إلى المفضلة",
+    "removeFromWishlist": "إزالة من المفضلة"
+  },
+  "checkout": {
+    "shippingAddress": "عنوان الشحن",
+    "paymentMethod": "طريقة الدفع",
+    "orderSummary": "ملخص الطلب",
+    "placeOrder": "تأكيد الطلب",
+    "orderSuccess": "تم تأكيد طلبك بنجاح",
+    "orderNumber": "رقم الطلب"
+  }
+} 

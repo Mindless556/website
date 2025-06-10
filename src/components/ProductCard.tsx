@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Product } from '@/lib/products';
@@ -7,13 +7,20 @@ interface ProductCardProps {
   product: Product;
 }
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+  hover: { y: -5 }
+};
+
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      whileInView="visible"
+      whileHover="hover"
       viewport={{ once: true }}
-      whileHover={{ y: -5 }}
+      variants={cardVariants}
       className="bg-white rounded-lg shadow-md overflow-hidden group"
     >
       <Link href={`/product/${product.slug}`}>

@@ -12,17 +12,6 @@ const tabs = [
   { id: 'users', label: 'إدارة المستخدمين' },
 ];
 
-export const metadata = {
-  title: 'لوحة التحكم | متجر إلكتروني',
-  description: 'لوحة تحكم الإدارة لإدارة المنتجات والطلبات والمستخدمين في المتجر الإلكتروني.',
-  openGraph: {
-    title: 'لوحة التحكم | متجر إلكتروني',
-    description: 'لوحة تحكم الإدارة لإدارة المنتجات والطلبات والمستخدمين في المتجر الإلكتروني.',
-    type: 'website',
-    locale: 'ar',
-  },
-};
-
 export default function AdminPage() {
   const { data: session, status } = useSession();
   const router = useRouter();
