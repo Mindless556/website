@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 
-const tabs = [
+const menuItems = [
   { id: 'products', label: 'إدارة المنتجات' },
   { id: 'orders', label: 'إدارة الطلبات' },
   { id: 'users', label: 'إدارة المستخدمين' },
@@ -62,7 +62,7 @@ export default function AdminPage() {
         {/* Tabs */}
         <div className="border-b border-gray-200 mb-8">
           <nav className="flex space-x-8 space-x-reverse" aria-label="Tabs">
-            {tabs.map((tab) => (
+            {menuItems.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}

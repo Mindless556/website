@@ -1,48 +1,43 @@
-import { motion, type Variants } from 'framer-motion';
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Product } from '@/lib/products';
+import { motion } from 'framer-motion';
 
 interface ProductCardProps {
-  product: Product;
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  slug: string;
 }
 
-const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-  hover: { y: -5 }
-};
-
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ id, name, price, image, slug }: ProductCardProps) {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      whileHover="hover"
-      viewport={{ once: true }}
-      variants={cardVariants}
-      className="bg-white rounded-lg shadow-md overflow-hidden group"
-    >
-      <Link href={`/product/${product.slug}`}>
-        <div className="relative h-64">
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div className="p-6">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm text-gray-500">{product.category}</span>
-            <span className="text-primary font-bold">{product.price}</span>
+    <div className="group relative">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Link href={`/product/${slug}`}>
+          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200">
+            <Image
+              src={image}
+              alt={name}
+              width={500}
+              height={500}
+              className="h-full w-full object-cover object-center group-hover:opacity-75"
+            />
           </div>
-          <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-            {product.name}
-          </h3>
-          <p className="text-gray-600 line-clamp-2">{product.description}</p>
-        </div>
-      </Link>
-    </motion.div>
+          <div className="mt-4 flex justify-between">
+            <div>
+              <h3 className="text-sm text-gray-700">{name}</h3>
+              <p className="mt-1 text-sm text-gray-500">{price} ريال</p>
+            </div>
+          </div>
+        </Link>
+      </motion.div>
+    </div>
   );
 } 
